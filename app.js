@@ -54,7 +54,7 @@ const createTodo = (randomId, info) => {
   li.className = 'list-item'
   li.innerHTML = `
 <span>${count}</span>
-<span>${new Date()}</span>
+
 <span>${info}</span>
 <span><button class="btn text-red" id="delete-btn">delete</button</span>
 
