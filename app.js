@@ -3,15 +3,45 @@
 const inputTodo = document.getElementById('todo')
 const submitTodo = document.getElementById('add-todo');
 const todoForm = document.getElementById('input-form')
+const ul = document.getElementById('lists')
+
+
 
 //add todudo
 
 const addTodo = (event)=>{
 
    event.preventDefault()
-   console.log(inputTodo.value)
+  const info = inputTodo.value;
+
+//   genarate id 
+
+const randomId = Date.now().toString();
+
+// create function 
+
+createTodo(randomId,info)
 
 }
+
+// create function
+
+const createTodo = (randomId,info)=>{
+  
+const li = document.createElement('li');
+li.id = randomId;
+
+li.innerHTML = `
+
+<span>${info}</span>
+<span><button>delete</button</span>
+
+`
+ul.appendChild(li)
+
+
+}
+
 
 
 //add event listener
