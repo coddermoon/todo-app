@@ -5,7 +5,7 @@ const submitTodo = document.getElementById('add-todo');
 const todoForm = document.getElementById('input-form')
 const ul = document.getElementById('lists');
 const massage = document.getElementById('massage')
-
+let count = 0
 
 
 // show massage function
@@ -46,9 +46,14 @@ const createTodo = (randomId, info) => {
 
   const li = document.createElement('li');
   li.id = randomId;
+
+  
+   count = count + 1
+   console.log()
+
   li.className = 'list-item'
   li.innerHTML = `
-
+<span>${count}</span>
 <span>${info}</span>
 <span><button class="btn text-red" id="delete-btn">delete</button</span>
 

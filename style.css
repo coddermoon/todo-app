@@ -54,7 +54,7 @@ input{
 }
 
 .card {
-    width: 30%;
+    width: 80%;
 }
 
 form#input-form {
@@ -78,3 +78,6 @@ form#input-form {
    background: #ffdddd;
    border-left: 6px solid #a44436;
 }
+
+
+
