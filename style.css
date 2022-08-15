@@ -1,0 +1,29 @@
+body{
+    background: #ecf0f1;
+    
+}
+
+.container{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    margin: .6rem;
+    padding: .6rem;
+    border: none;
+    outline: none;
+    border-radius: .6rem;
+    font-size: 20px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background: #222;
+    padding: .6rem;
+    border-radius: .6rem;
+    font-size: 20px;
+}
