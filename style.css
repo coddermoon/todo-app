@@ -66,3 +66,15 @@ form#input-form {
     background: tomato;
     
 }
+.bg-success{
+   margin: .5rem 0; 
+   padding: .5rem 0; 
+   background: #ddffdd;
+   border-left: 6px solid #04aa6d;
+}
+.bg-danger{
+   margin: .5rem 0; 
+   padding: .5rem 0; 
+   background: #ffdddd;
+   border-left: 6px solid #a44436;
+}
