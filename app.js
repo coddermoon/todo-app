@@ -52,16 +52,31 @@ const createTodo = (randomId, info) => {
 <span>${info}</span>
 <span><button class="btn text-red" id="delete-btn">delete</button</span>
 
+
+
+
 `
   ul.appendChild(li)
 
+
+// called delete function
+
+const deleteBtn = document.getElementById('delete-btn');
+deleteBtn.id = randomId
+  deleteBtn.addEventListener('click',deleteTodo)
 
 
 
 
 
 }
+// delete todo 
 
+const deleteTodo = (event)=>{
+  const selectedTodo = event.target.parentNode.parentNode;
+  ul.removeChild(selectedTodo)
+  showMassage(`successfully deleted `, 'danger')
+}
 
 
 //add event listener
