@@ -34,7 +34,7 @@ li.className = 'list-item'
 li.innerHTML = `
 
 <span>${info}</span>
-<span><button>delete</button</span>
+<span><button class="btn text-red" id="delete-btn">delete</button</span>
 
 `
 ul.appendChild(li)

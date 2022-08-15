@@ -33,6 +33,7 @@ input{
     padding: .6rem;
     border-radius: .6rem;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .list-item {
@@ -44,6 +45,12 @@ input{
     border: 1px solid #ddd;
     border-radius: .4rem;
     margin: 6px .6rem;
+    align-items: center;
+    transition: all .4s;
+}
+
+.list-item:hover{
+   cursor: pointer;
 }
 
 .card {
@@ -53,4 +60,9 @@ input{
 form#input-form {
   
     text-align: center;
+}
+
+.text-red{
+    background: tomato;
+    
 }
