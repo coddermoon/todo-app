@@ -36,7 +36,7 @@ const addTodo = (event) => {
 
   showMassage('successfully added', 'success')
 
-    
+   inputTodo.value = ''
 
 }
 
