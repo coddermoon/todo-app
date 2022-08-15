@@ -30,7 +30,7 @@ const createTodo = (randomId,info)=>{
   
 const li = document.createElement('li');
 li.id = randomId;
-
+li.className = 'list-item'
 li.innerHTML = `
 
 <span>${info}</span>
